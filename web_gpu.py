@@ -29,7 +29,7 @@ def load_whisper_model(model_name):
     model = whisper.load_model(model_name)
     return model
 
-# Summarise the given transcript with either pretrained or fintuned model
+# Summarise the given transcript with either pretrained or finetuned model
 def summarize_text(text, option='Pretrained', progress_bar=None):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     if option == 'Pretrained':
