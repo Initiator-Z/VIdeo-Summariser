@@ -4,6 +4,8 @@ Web application powered by OpenAI's Whisper and pretrained BART
 ## Getting Started
 
 ### Dependencies and Installation
+* Pytorch and cuda is optional for GPU accelerated version of the application\
+Follow the directions in: https://pytorch.org/get-started/locally/
 
 ```
 # clone this repository
@@ -16,14 +18,12 @@ conda activate video_summariser
 
 # install dependcies
 pip install -r requirements.txt
-
-# Pytorch and cuda is optional for GPU accelerated version of the application
-# follow the directions in: https://pytorch.org/get-started/locally/
 ```
 
+
 ### Finetuned Model
-# Download optional model finetuned with TED Talks and unzip to the same directory as the py files
-# https://drive.google.com/file/d/1X7HAtapky6u9HZq1-nDQu7tQ0kXJ3F3F/view?usp=share_link
+* Download optional model finetuned with TED Talks and unzip to the same directory as the py files
+https://drive.google.com/file/d/1X7HAtapky6u9HZq1-nDQu7tQ0kXJ3F3F/view?usp=share_link
 
 ### Executing program
 
