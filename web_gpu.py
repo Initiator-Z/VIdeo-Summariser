@@ -14,6 +14,16 @@ def save_file(file_data, filename):
             f.write(file_data.getbuffer())
         st.success("File saved to the current directory for further processing")
 
+# Check finetuned model is in the current directory if chosing the finetuned model option
+def check_model_folder():
+    folder_name = 'fine-tuned-model'
+    current_dir = os.getcwd()
+    folder_path = os.path.join(current_dir, folder_name)
+    if os.path.exists(folder_path) and os.path.isdir(folder_path):
+        st.sidebar.write(f'{model_bart} model selected')
+    else:
+        st.sidebar.write(f"Please download and unzip the finetuned model into current working directory \n https://drive.google.com/file/d/1X7HAtapky6u9HZq1-nDQu7tQ0kXJ3F3F/view?usp=share_link")
+
 # Load Whisper model for vidoe transcribing
 def load_whisper_model(model_name):
     model = whisper.load_model(model_name)
@@ -65,7 +75,10 @@ st.sidebar.write(f'{model_name} model selected')
 
 options_bart = {'Pretrained': 'BART pretrained from CNN News', 'Finetuned': 'Pretrained model finetuned on TED talks'}
 model_bart = st.sidebar.radio('Select a BART Model:', list(options_bart.keys()), format_func=lambda option: f"{option}: {options_bart[option]}")
-st.sidebar.write(f'{model_bart} model selected')
+if model_bart == 'Finetuned':
+    check_model_folder()
+else:
+    st.sidebar.write(f'{model_bart} model selected')
 
 if st.sidebar.button('Summarise Video'):
     if file is not None:
