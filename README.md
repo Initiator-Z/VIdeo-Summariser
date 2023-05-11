@@ -17,7 +17,12 @@ pip install -r requirements.txt
 
 # Pytorch is optional for GPU accelarted version of the application
 # follow the directions in: https://pytorch.org/get-started/locally/
+```
 
+### Finetuned Model
+```
+# Download optional model finetuned with TED Talks
+# https://drive.google.com/file/d/1X7HAtapky6u9HZq1-nDQu7tQ0kXJ3F3F/view?usp=share_link
 ```
 
 ### Executing program
