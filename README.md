@@ -7,6 +7,8 @@ Web application powered by OpenAI's Whisper and pretrained BART
 
 ```
 # clone this repository
+git clone https://github.com/Initiator-Z/Video-Summariser.git
+cd Video-Summariser
 
 # create new conda environment
 conda create --name video_summariser python=3.10
