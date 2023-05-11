@@ -15,8 +15,8 @@ conda activate video_summariser
 # install dependcies
 pip install -r requirements.txt
 
-# optional installsation of Pytorch for GPU accelarted version of the application
-# Fllowing the directions in: https://pytorch.org/get-started/locally/
+# Pytorch is optional for GPU accelarted version of the application
+# follow the directions in: https://pytorch.org/get-started/locally/
 
 ```
 
