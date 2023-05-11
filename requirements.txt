@@ -1,3 +1,4 @@
-openai-whisper
+chardet
 streamlit
 transformers
+openai-whisper
