@@ -22,10 +22,8 @@ pip install -r requirements.txt
 ```
 
 ### Finetuned Model
-```
 # Download optional model finetuned with TED Talks and unzip to the same directory as the py files
 # https://drive.google.com/file/d/1X7HAtapky6u9HZq1-nDQu7tQ0kXJ3F3F/view?usp=share_link
-```
 
 ### Executing program
 
