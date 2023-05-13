@@ -38,5 +38,5 @@ streamlit run web.py/web_gpu.py
 
 ## Citations
 1. OpenAI. (2023). Whisper. GitHub. https://github.com/openai/whisper
-2. Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O., Stoyanov, V., & Zettlemoyer, L. (2019). BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension. CoRR, abs/1910.13461. http://arxiv.org/abs/1910.13461
+2. Hugging Face. (2023). BART-Large. Hugging Face. https://huggingface.co/facebook/bart-large
 
